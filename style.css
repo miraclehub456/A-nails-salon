@@ -1,0 +1,283 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+}
+
+
+nav {
+    background-color: antiquewhite;
+    padding: 16px 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.589);
+}
+
+
+nav p a,
+nav ul li a {
+   color: blueviolet;
+   letter-spacing: 3px;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+
+
+
+nav p a:hover,
+nav ul li a:hover {
+    background-color: greenyellow;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin: -17px 30px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: blanchedalmond;
+}
+
+.about {
+    padding: 80px 100px;
+}
+
+.about .left {
+    float: left;
+    margin-right: 50px;
+}
+
+.about .left img {
+    width: 500px;
+    border-radius: 10px;
+    opacity: .7;
+    height: 750px;
+}
+
+.about .right h1 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px; 
+}
+
+.about .right h5 {
+    text-align: center;
+    padding: 45px 0 25px;
+    letter-spacing: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.about .right .up {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.about .right .up span {
+   background-color: gainsboro;
+   padding: 3px 7px;
+}
+
+.about .right .dowm {
+  font-size: 17px;
+    line-height: 1.8;
+    color:rgba(0, 0, 0, 0.575);
+    padding-top: 30px;
+}
+
+.line {
+    margin: 140px 100px 0px;
+    height: 1px;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+
+.menu {
+    padding: 80px 100px;
+}
+
+.menu .left {
+    float: left;
+    margin-right: 50px;
+}
+
+.menu .left h1 {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+.menu .left .up {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+
+.menu .left .down {
+    color: rgba(0, 0, 0, 0.466);
+    padding: 25px 0 50px;
+}
+
+.menu .right img {
+    width: 550px;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.line1 {
+    margin: 10px 100px 0px;
+    height: 1px;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.contact {
+    padding: 30px 100px 80px;
+}
+
+.contact h1 {
+    padding: 50px 0;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.contact .add {
+    color: rgb(90, 129, 126);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 25px 0;
+}
+
+.contact form {
+    padding-top: 30px;
+}
+
+.contact form input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 10px;
+    text-indent: 7px;
+    border-width: 0 0 1px 0;
+}
+
+.contact form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.contact form button:hover {
+    background-color: gainsboro;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: gainsboro;
+    text-align: center;
+}
+
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    color: green;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .about {
+        padding: 80px 10px;
+    }
+
+    .about .left img,
+    .menu .right img {
+        width: 500px;
+    }
+
+    .line {
+        margin: 40px 10px 50px;
+        height: 1px;
+        width: 97%;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+
+    .menu {
+        padding: 30px 10px 80px;
+    }
+
+    .line1 {
+        margin: 10px 10px 0px;
+        height: 1px;
+        width: 97%;
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+
+    .contact {
+        padding: 30px 10px 80px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about .left img {
+        width: 350px;
+    }
+
+    .about .right h1 {
+        padding-top: 10px;
+    }
+
+    .about .right .down {
+        display: none;
+    }
+
+    .menu .left h1 {
+        text-align: right;
+    }
+
+    .menu .right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    nav ul {
+        display: none;
+    }    
+
+    .about .left {
+        display: none;
+    }
+
+    .about .right .down {
+        display: block;
+    }
+
+        .menu .left h1 {
+        text-align: center;
+    }
+}
